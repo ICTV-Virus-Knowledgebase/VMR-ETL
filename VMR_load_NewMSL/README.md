@@ -19,8 +19,8 @@ Protocol:
        * [7a.entrez_query_RefSeq_from_GB.sh](7a.entrez_query_RefSeq_from_GB.sh)
      * load those into [gb-rs]
      * update [vmr] from [gb-rs]
-       * [7b.update_refseq-E.sql](7a.update_refseq-E.sql)
-       * [7c.update_refseq-A.sql](7b.update_refseq-A.sql)
+       * [7b.update_refseq-E.sql](7b.update_refseq-E.sql)
+       * [7c.update_refseq-A.sql](7c.update_refseq-A.sql)
      * this process does not capture segment names. Hand-edit all new, multi-segmented viruses to add segment names to their refseq accessions
   * export new VMR to xlsx
      * [8.vmr_out.sql](8.vmr_out.sql)
