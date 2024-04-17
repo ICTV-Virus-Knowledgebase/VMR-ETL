@@ -16,10 +16,11 @@ Protocol:
      * [IVK-259](https://uab-lefkowitz.atlassian.net/browse/IVK-259) proposalProcessor does not transfer the refseq field from proposal.xlsx to taxonomy_node, so we only have genbank accessions
      * dump virus name and accession number from VMR records w/o refseq
      * [IVK-261](https://uab-lefkowitz.atlassian.net/browse/IVK-261) query NCBI for the correpsonding refseq entries
+       * [7a.entrez_query_RefSeq_from_GB.sh](7a.entrez_query_RefSeq_from_GB.sh)
      * load those into [gb-rs]
      * update [vmr] from [gb-rs]
-       * [7a.update_refseq-E.sql](7a.update_refseq-E.sql)
-       * [7b.update_refseq-A.sql](7b.update_refseq-A.sql)
+       * [7b.update_refseq-E.sql](7a.update_refseq-E.sql)
+       * [7c.update_refseq-A.sql](7b.update_refseq-A.sql)
      * this process does not capture segment names. Hand-edit all new, multi-segmented viruses to add segment names to their refseq accessions
   * export new VMR to xlsx
      * [8.vmr_out.sql](8.vmr_out.sql)
