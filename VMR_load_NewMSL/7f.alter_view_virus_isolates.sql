@@ -1,12 +1,13 @@
 USE [ICTVonline39]
 GO
 
-/****** Object:  View [dbo].[virus_isolates]    Script Date: 5/9/2024 3:09:41 AM ******/
+/****** Object:  View [dbo].[virus_isolates]    Script Date: 5/13/2024 2:08:56 PM ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
+
 
 
 ALTER VIEW [dbo].[virus_isolates]
@@ -21,7 +22,7 @@ SELECT
                    vmr.alternative_name_csv,
 	 -- VMR metadata
 	 vmr.abbrev_csv, vmr.isolate_abbrev,
-	 vmr.sort, vmr.taxnode_id,
+	 vmr.sort_species, vmr.sort, vmr.taxnode_id,
 	 vmr.host, vmr.molecule, 
  	 -- taxonomy_node metadata
      tn.realm,
